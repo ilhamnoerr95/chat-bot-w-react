@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = React.memo(({ children, onSend, text }) => {
+const Button = React.memo(({ children, onSend, text, type }) => {
 	const handleClick = () => {
 		onSend();
 	};
@@ -9,6 +9,7 @@ const Button = React.memo(({ children, onSend, text }) => {
 			<button
 				onClick={handleClick}
 				disabled={!text}
+				type={type}
 			>
 				{children}
 			</button>

@@ -1,12 +1,14 @@
 import React from "react";
 
-const InputComponent = ({ setter, inputText }) => {
+const InputComponent = ({ setter, inputText, }) => {
 	return (
 		<>
 			<textarea
 				className="c-input"
 				value={inputText}
 				onChange={(e) => setter(e.target.value)}
+				placeholder="send messages ..."
+				// disabled={status !== "ready"}
 			/>
 			<style jsx>{`
 				.c-input {

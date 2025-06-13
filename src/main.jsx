@@ -33,7 +33,11 @@ createRoot(document.getElementById("root")).render(
 
 				<Route
 					path="/chat-gpt"
-					element={<Chat />}
+					element={
+						// <AIProvider>
+						<Chat />
+						// </AIProvider>
+					}
 				/>
 
 				<Route
