@@ -6,7 +6,7 @@ import { OpenAI } from "openai";
 const KEY = ""
 
 const app = express();
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY || KEY });
+const openai = new OpenAI({ apiKey: KEY });
 
 app.use(cors());
 app.use(express.json());
