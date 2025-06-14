@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Call from "./page/call.jsx";
 import Chat from "./page/chat.jsx";
 import SimpleChat from "./page/simple-chat.jsx";
+import AnotherBot from "./page/another-bot.jsx";
 const About = lazy(() => import("./page/about.jsx"));
 
 createRoot(document.getElementById("root")).render(
@@ -43,6 +44,10 @@ createRoot(document.getElementById("root")).render(
 				<Route
 					path="/simple-chat"
 					element={<SimpleChat />}
+				/>
+				<Route
+					path="/chat-bot"
+					element={<AnotherBot />}
 				/>
 			</Routes>
 		</BrowserRouter>
