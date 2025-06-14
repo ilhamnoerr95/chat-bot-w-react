@@ -15,7 +15,8 @@ npm run server:dev
 ## Route
 
 1. /simple-chat
-2. /chat-gpt
+2. /chat-bot
+3. /chat-gpt
 
 > [!NOTE]
 > The server is running on port 3001, and frontend running in port 5173.
